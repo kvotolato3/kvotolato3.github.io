@@ -3,4 +3,44 @@
 	</head>
 	<body>
 		<h1> Kathleen's website1 </h1>
+
+<!-- html code -->
+<img src="http://www.google.com/images/srpr/logo11w.png" id="slideshow"><br/>
+<a href="#" onclick="return changeImage(-1);">Previous</a><br/>
+<a href="#" onclick="return changeImage(1);">Next</a>
+
+<!-- css -->
+<style>
+img { width: 250px; height: auto; }
+</style>
+
+
+<!-- javascript -->
+<script>
+var images = ["http://www.google.com/images/srpr/logo11w.png", "https://scontent-a-iad.xx.fbcdn.net/hphotos-prn2/t1/1655987_10152303410238974_557595578_n.jpg", "https://scontent-b-iad.xx.fbcdn.net/hphotos-frc1/t1/1924445_10152303394283974_1548859358_n.jpg"];
+
+var imgNum = 0;
+var imgLength = images.length - 1;
+
+function changeImage(direction) {
+    imgNum = imgNum + direction;
+    if (imgNum > imgLength) {
+        imgNum = 0;
+    }
+    if (imgNum < 0) {
+        imgNum = imgLength;
+    }
+    document.getElementById('slideshow').src = images[imgNum];
+    return false; // prevent default link
+}
+window.setInterval(function() {
+    changeImage(1);
+}, 3000);
+</script>
+
+
+
+
+
 	</body>
+</html>
