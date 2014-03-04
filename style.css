@@ -1,0 +1,39 @@
+
+
+
+img { width: 250px; height: auto; }	
+
+.upper-right-photo {
+	width: 250px;
+	position: relative;
+	right: -70%;
+}
+
+.lower-left-photo {
+	width: 250px;
+	position: relative;
+	left:0%;
+}
+.main-photo {
+	width: 250px;
+	margin: 0 auto;
+}
+h1 {
+	text-align: center;
+}
+
+.contact {
+	text-align: right;
+}
+
+p {
+font-weight: bold;
+font-size: medium;
+}
+
+.carousel {
+	margin-bottom: 30px;
+	width: 250px;
+	margin: 0 auto;
+}
+

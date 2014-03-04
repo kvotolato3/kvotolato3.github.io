@@ -1,23 +1,59 @@
 <DOCTYPE HTML>
 	<head>
+	<link href="style.css" rel="stylesheet">	
 	</head>
 	<body>
-		<h1> Kathleen's website1 </h1>
+		
+		<div class='upper-right-photo'>
+		<img src="http://i.imgur.com/Dsl88D9.jpg"> 
+			This is a picture of (starting at 9 o'clock going clockwise) me, my sister-in-law, and two other friends, taken in Napa.
+		</div>
+		
+		<div class='main-photo'>
+		<img src="http://i.imgur.com/q3ijuyn.jpg"> 
+		</div>
+		
+		<h1>Kathleen Votolato</h1>
+		<p>
 
-<!-- html code -->
-<img src="http://www.google.com/images/srpr/logo11w.png" id="slideshow"><br/>
-<a href="#" onclick="return changeImage(-1);">Previous</a><br/>
-<a href="#" onclick="return changeImage(1);">Next</a>
+			My Experience <br>
+			<small>I started in corporate services for 2.5 years and later moved into the software arena when I joined Maconomy in 2010.  Since then, I have moved up the ranks from Junior Consultant, to Consultant, to my current position as a Senior Consultant. As a consultant, I configure databases, conduct re-engineering sessions, document specifications, and write/modify code that is similar to HTML and CSS. Being in front of a client offers first-hand exposure to the issues users have, and so I have gained a real sense of what works and what doesn't from a user-experience perspective. <br> <br>
 
-<!-- css -->
-<style>
-img { width: 250px; height: auto; }
-</style>
+I have a Bachelor's degree in General Management from Simmons College and am currently pursuing a Master's in Finance from Harvard Extension School. <br><br> </small>
+
+About me <br>
+<small>I'm an intense, high-energy person, especially when it comes to work. I like to be challenged and to spend time being creative. I do a lot of research to obtain new skills and gain the skills needed to implement new ideas. In my current world, consultants are booked in a resource-planning tool as if they were inanimate objects, which I find hard to cope with because it removes the possibility of one managing his or her own schedule. Therefore, I'm now focusing on a career where I can be creative and get into a "flow" while doing my work. Although I'm intense, I'm also quiet and don't make a lot of small talk. That is not to say I'm anti-social. I'm just not very skilled at talking about superficial things because I'm more interested in diving into the details. <br><br>
+
+Outside of work, there are a couple of hobbies I like to dabble in.
+My biggest hobbies are running and gardening. Last year, I did a half marathon, "Boston's Run to Remember". I don't even remember my finishing time, but it was a blast, it felt great, and I had a lot of fun in process. I also like to plant a small kitchen garden in the summertime. Last year, I grew tomatoes, basil, parsley, and peas. The peas died really early on, though they tasted delicious. <br><br></small>
+		</p>
+
+		<div class='carousel'>
+		<img src="http://i.imgur.com/yShiEMF.jpg" id="slideshow"><br/>
+<!-- 		<a href="#" onclick="return changeImage(-1);">Previous</and><br/>
+		<a href="#" onclick="return changeImage(1);">Next</a> -->
+	</div>
+
+
+		<div class='lower-left-photo'>This is me and my fiance at a friend's wedding rehearsal dinner from last year. Can't wait for my own wedding!
+		<img src="http://i.imgur.com/aFHSM4v.jpg"> 
+		</div>
+
+		<div class='contact'>
+			email: kvotolato3@gmail.com<br>
+			phone: 617-901-1183<br>
+		</div>
+		
+
+		
+
+
+
 
 
 <!-- javascript -->
 <script>
-var images = ["http://www.google.com/images/srpr/logo11w.png", "https://scontent-a-iad.xx.fbcdn.net/hphotos-prn2/t1/1655987_10152303410238974_557595578_n.jpg", "https://scontent-b-iad.xx.fbcdn.net/hphotos-frc1/t1/1924445_10152303394283974_1548859358_n.jpg"];
+var images = ["http://i.imgur.com/yShiEMF.jpg", "http://i.imgur.com/CFpqjUr.png", "http://i.imgur.com/Pj4Suw4.jpg"];
 
 var imgNum = 0;
 var imgLength = images.length - 1;
